@@ -1,0 +1,21 @@
+#UserInput {
+  width: 375px;
+  height: 75px;
+  background-color: #0d131b;
+  font-size: 20px;
+  text-align: right;
+}
+
+#InputMemory {
+  font-size: 18px;
+  color: #ff8c32;
+  margin: 0px;
+  padding: 10px 10px 0px 10px;
+}
+
+#Input {
+  font-size: 25px;
+  color: #eeeeee;
+  margin: 0px;
+  padding: 0 10px;
+}
