@@ -1,27 +1,27 @@
 import React from "react";
-import { NumberButton, OperatorButton, EqualsButton, ClearButton } from "./Button.js";
+import { NumberButton, DecimalButton, OperatorButton, EqualsButton, ClearButton } from "./Button.js";
 import "./ButtonGrid.css";
 
 
 function ButtonGrid(props) {
     return <div className="container">
-        <ClearButton></ClearButton>
-        <OperatorButton symbol="/"></OperatorButton>
-        <OperatorButton symbol="x"></OperatorButton>
-        <NumberButton id="seven" symbol={7}></NumberButton>
-        <NumberButton id="eight" symbol={8}></NumberButton>
-        <NumberButton id="nine" symbol={9}></NumberButton>
-        <OperatorButton symbol="-"></OperatorButton>
-        <NumberButton id="four" symbol={4}></NumberButton>
-        <NumberButton id="five" symbol={5}></NumberButton>
-        <NumberButton id="six" symbol={6}></NumberButton>
-        <OperatorButton symbol="+"></OperatorButton>
-        <NumberButton id="one" symbol={1}></NumberButton>
-        <NumberButton id="two" symbol={2}></NumberButton>
-        <NumberButton id="three" symbol={3}></NumberButton>
-        <EqualsButton ></EqualsButton>
-        <NumberButton id="zero" symbol={0}></NumberButton>
-        <NumberButton symbol={"."}></NumberButton>
+        <ClearButton id="clear" clearDisplay={props.clearDisplay}></ClearButton>
+        <OperatorButton id="divide" symbol="/" handleOperator={props.handleOperator}></OperatorButton>
+        <OperatorButton id="multiply" symbol="*" handleOperator={props.handleOperator}></OperatorButton>
+        <NumberButton id="seven" symbol={7} handleNumber={props.handleNumber}></NumberButton>
+        <NumberButton id="eight" symbol={8} handleNumber={props.handleNumber}></NumberButton>
+        <NumberButton id="nine" symbol={9} handleNumber={props.handleNumber}></NumberButton>
+        <OperatorButton id="subtract" symbol="-" handleOperator={props.handleOperator}></OperatorButton>
+        <NumberButton id="four" symbol={4} handleNumber={props.handleNumber}></NumberButton>
+        <NumberButton id="five" symbol={5} handleNumber={props.handleNumber}></NumberButton>
+        <NumberButton id="six" symbol={6} handleNumber={props.handleNumber}></NumberButton>
+        <OperatorButton id="add" symbol="+" handleOperator={props.handleOperator}></OperatorButton>
+        <NumberButton id="one" symbol={1} handleNumber={props.handleNumber}></NumberButton>
+        <NumberButton id="two" symbol={2} handleNumber={props.handleNumber}></NumberButton>
+        <NumberButton id="three" symbol={3} handleNumber={props.handleNumber}></NumberButton>
+        <EqualsButton id="equals" handleEquals={props.handleEquals}></EqualsButton>
+        <NumberButton id="zero" symbol={0} handleNumber={props.handleNumber}></NumberButton>
+        <DecimalButton id="decimal" symbol={"."} handleDecimal={props.handleDecimal}></DecimalButton>
     </div>
 }
 

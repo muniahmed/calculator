@@ -1,4 +1,4 @@
-#UserInput {
+#Display {
   width: 375px;
   height: 75px;
   background-color: #0d131b;
@@ -8,13 +8,26 @@
 
 #InputMemory {
   font-size: 18px;
+  height: 25px;
   color: #ff8c32;
   margin: 0px;
   padding: 10px 10px 0px 10px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
-#Input {
+#InputMemory::-webkit-scrollbar {
+  background: #0d131b;
+}
+
+#InputMemory::-webkit-scrollbar-thumb {
+  background: #86898d;
+  border-radius: 8px;
+}
+
+#UserInput {
   font-size: 25px;
+  height: 50px;
   color: #eeeeee;
   margin: 0px;
   padding: 0 10px;
