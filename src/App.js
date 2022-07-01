@@ -37,12 +37,6 @@ function App() {
 
   }
 
-  // function evil(equation) {
-  //   return new Function('return ' + equation)();
-  // }
-
-
-
   function handleEquals() {
     let equation;
     if (answered) {
